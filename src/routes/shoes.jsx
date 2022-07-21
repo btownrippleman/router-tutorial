@@ -20,10 +20,13 @@ export default function BrandLink({ brand, ...props }) {
       );
     }
     return (
+      <div>
       <Link
         style={{ color: isActive ? "red" : "" }}
         to={`/shoes?${params.toString()}`}
         {...props}
       />
+      <p>{params.Array}</p>
+      </div>
     );
   }
